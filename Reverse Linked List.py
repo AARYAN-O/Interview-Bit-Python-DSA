@@ -10,7 +10,11 @@ class Solution:
 	def reverseList(self, A):
         prev=None
         current=A
-        
+	# currrent.next contains the address of the next node.
+	# prev is a Node and current.next is a pointer to the next node.
+	# Then, how can two things having different datatypes be on the either sides of equals to operator.
+	# This is so because they are both part of same Nodes.
+	
         while current:
             next_node=current.next
             current.next=prev
